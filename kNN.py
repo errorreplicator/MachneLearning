@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import sklearn.cross_validation as skc
 import sklearn.neighbors as skn
-import sklearn.svm as sksS -- TESTED CHANGE
+import sklearn.svm as sksS #-- TESTED CHANGE
 
 desired_width = 320
 pd.set_option('display.width', desired_width)
