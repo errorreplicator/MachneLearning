@@ -17,7 +17,9 @@ ds = ds[['bgr','rc','wc']]
 
 ##print(ds[ds.wc.str.contains('\t')])
 
-
+# print(ds.ix[ds.rc.str.match(r'^\d*\.*\d*$')])
+##print(ds.ix[ds.rc.str.match(r'^\d\.\d')]) # regular exp. '\d' is for any decimal - equivalent to [0-9]
+print(ds.ix[~ds.wc.str.match(r'^\d')])
 ## print(ds[ds.rc.str.startswith('2', na=False)]) #checks if string begun with curtain digit
 ##print(ds[ds.rc.str.isdigit()]) # checks if the string is digits - does not work with floats since there is a dot 3.4
 
